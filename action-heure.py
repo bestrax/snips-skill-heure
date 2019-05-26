@@ -48,7 +48,7 @@ def intent_received(hermes, intent_message):
 		sentence = 'Il est '
 		print(intent_message.intent.intent_name)
 
-		now = datetime.now(timezone('Europe/Paris'))
+		now = datetime.now(timezone('America/Montreal'))
 
 		sentence += verbalise_hour(now.hour) + " " + verbalise_minute(now.minute)
 		print(sentence)
